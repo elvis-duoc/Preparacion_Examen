@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Cloud Practitioner - Flashcards</title>
+    <link rel="stylesheet" href="flashcards.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AWS Cloud Practitioner</h1>
+            <p class="subtitle">Flashcards - Servicios y Conceptos</p>
+            <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Cambiar modo oscuro">
+                <span class="icon">🌙</span>
+            </button>
+        </header>
+
+        <div class="controls">
+            <button id="prevBtn" class="nav-btn">← Anterior</button>
+            <span class="card-counter" id="cardCounter">1 / 100</span>
+            <button id="nextBtn" class="nav-btn">Siguiente →</button>
+        </div>
+
+        <div class="flashcard-container">
+            <div class="flashcard" id="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">
+                        <div class="card-content" id="frontContent">
+                            <h2>AWS Lambda</h2>
+                        </div>
+                        <p class="hint">Haz clic para ver la explicación</p>
+                    </div>
+                    <div class="flashcard-back">
+                        <div class="card-content" id="backContent">
+                            <h3>AWS Lambda</h3>
+                            <p>Servicio serverless que ejecuta código sin necesidad de administrar servidores.</p>
+                        </div>
+                        <p class="hint">Haz clic para volver</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <footer>
+            <p>Total de conceptos: <strong id="totalCards">0</strong></p>
+            <p><a href="index.html">← Volver al test</a></p>
+        </footer>
+    </div>
+
+    <script src="flashcards.js"></script>
+</body>
+</html>
